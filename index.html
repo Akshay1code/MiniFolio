@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:Poppins;
+        background-color: #e0e0e0;
+    }
+    #container{
+        border-radius: 15px;
+        padding:20px;
+        background:#ffffff;
+        width:540px;
+        height:300px;
+        margin:auto;
+        margin-top:150px;
+        text-align: center;
+        box-shadow: #787878;
+    }
+    #skill{
+        display: inline-block;
+        background-color: #e0e0e0;
+        border-radius: 4px;
+        padding: 7px;
+        margin:5px;
+        font-weight: 550;
+        color:#0d5764;
+        gap:50px;
+    }
+    #actions{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        padding:5px;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px;
+    }
+    button{
+        padding:10px;
+        border:none;
+        border-radius: 8px;
+        font-size: 20px;
+        color:#ffffff;
+        background-color: #0d5764;
+    }
+    #button:hover{
+        background-color:#0d5764 ;
+    }
+    #bold{
+        font-weight: 600;
+        color: #1f5f6a;
+    }
+    @media(max-width:600px){
+        #actions{
+            flex-direction: column;
+        }
+    }
+    #content{
+        background-color: #e0e0e0;
+    }
+    
+</style>
+<body>
+    <div id="container">
+        <h1>Akshay Menon</h1>
+            <p>Hii, Myself Developer,I am going to learn <span id="bold">MERN Stack</span> Development</p>
+        
+        <div id="skills">
+            <p id="skill">HTML</p>
+            <p id="skill">CSS</p>
+            <p id="skill">JavaScript</p>
+        </div>
+        <div id="actions">
+            <button onclick="showAbout()">About</button>
+            <button onclick="showCert()">Certificate</button>
+            <button onclick="showContact()">Contact</button>
+            <button onclick="showProject()">Projects</button>
+        </div>
+        <div id="content">
+
+        </div>
+    </div>
+    <script>
+        let contentBox=document.getElementById("content")
+        function showAbout(){
+            content.style.display="block"
+            contentBox.innerText="I am Currently studying Computer Engineering"
+        }
+        function showCert(){
+            content.style.display="block"
+            contentBox.innerText="Python,Java Full Stack Developer"
+        }function showContact(){
+            content.style.display="block"
+            contentBox.innerText="829xxxxxxxxxxxx"
+        }function showProject(){
+            content.style.display="block"
+            contentBox.innerText="Virtual banking System ,Virtual Blood Bank App"
+        }
+
+    </script>
+</body>
+</html>
